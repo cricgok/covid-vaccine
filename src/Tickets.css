@@ -1,0 +1,77 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ticket-container {
+  background: linear-gradient(to bottom, #ff3366, #ffcc33);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.ticket-container:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 80%;
+  height: 20px;
+  border-top: 2px solid #ff3366;
+  border-radius: 0 0 10px 10px;
+  transform: translateX(-50%);
+}
+
+h2 {
+  color: #92a9c1;
+}
+
+p {
+  line-height: 1.6;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.ticket-container p:first-child {
+  font-weight: bold;
+}
+
+.ticket-container p:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.ticket-container p:last-child {
+  margin-top: 20px;
+  font-style: italic;
+}
